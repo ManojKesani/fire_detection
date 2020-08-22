@@ -18,6 +18,7 @@ Fire Detection Using Tensorflow 2 Object Detection API
 References 
 
 Dataset : https://github.com/OlafenwaMoses/FireNET/releases/download/v1.0/fire-dataset.zip
+
 Code Docs : https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/
 
 Training and inference for this report was done in Google Colab.
@@ -27,6 +28,7 @@ Description
 First we download and install Tensorflow 2.2 and clone the Object detection API from github. Then download the FireNET dataset containing the annotated images and XML files.
 
 Tensorflow provides many model for detection, and i have chosen efficientdet_d0 to train as the final model size is small and easy to share the final trained weights (easy downloads,uploads).So we download the weights of  efficientdet_d0. Along with this we need few files from my github repo, these are
+
     •  generate_tfrecord.py – Convert XML to TF Record.(From Docs )
     • labelmap.pbtxt – Contains label FIRE 
     • pipeline.config – Contains structure for training such as No.of classes,learning rate,batch size...,etc
@@ -36,6 +38,7 @@ Now we generate the Tfrecords from the XML file and start training. Documentatio
 We define a detection function that loads the model into memory .This trained model weights are also in my Github repo along with the test images . To this function we provide a list of paths to the images we would like to infer and then visualize the output.
 
 Output
+
 The inference part of the code loads the weights, and if the detection confidence is greater than 0.5 draws a bounding box. A statement will be printed saying ‘Fire’ or ‘No Fire’ which can be used as a trigger for the alerting system.
 
 Model pruning and quantization can further increse the inference speed.
