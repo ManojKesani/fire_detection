@@ -1,15 +1,20 @@
 # fire_detection
 Fire Detection Using Tensorflow 2 Object Detection API
+
     1. Downloads and Installation
         1. Install Tensorflow & Clone Object Detection API
         2. Download fire dataset ,Clone scripts from my github ,efficientdet_d0 weights from TensorFlow Repo
+        
     2. Training
+    
         1. Generate tfrecord to train
         2. Training
         3. Exporting the trained model
+        
     3. Inference
         1. loading detection function
         2. Inference
+        
 References 
 
 Dataset : https://github.com/OlafenwaMoses/FireNET/releases/download/v1.0/fire-dataset.zip
