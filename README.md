@@ -1,4 +1,7 @@
 # fire_detection
+
+https://medium.com/@manojkesani/object-detection-using-tensorflow2-3422da78b33e
+
 Fire Detection Using Tensorflow 2 Object Detection API
 
     1. Downloads and Installation
